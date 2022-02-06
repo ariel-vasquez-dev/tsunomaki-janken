@@ -1,0 +1,7 @@
+@import '../../styles/mixins/breakpoints';
+@import '../../styles/mixins/rem-calc';
+
+.p {
+  font-size: rem-calc(16);
+  line-height: rem-calc(18);
+}

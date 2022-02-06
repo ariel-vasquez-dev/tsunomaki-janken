@@ -1,0 +1,45 @@
+html,
+body {
+  // background: linear-gradient(113deg, rgba(251,215,155,1) 100%, rgba(253,230,137,1) 50%, rgba(252,244,171,1) 0%);
+  background: linear-gradient(113deg, rgba(236,164,107,1) 0%, rgba(251,215,155,1) 39%, rgba(253,230,137,1) 72%, rgba(252,244,171,1) 100%);
+  padding: 0;
+  margin: 0;
+  font-weight: map-get($font-weights, 'regular');
+  font-family: $font-primary;
+  overflow-y: overlay;
+  height: 100%;
+
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #ECA46B;
+    border-radius: 5px;
+  }
+
+  ::-moz-selection { /* Code for Firefox */
+    background-color: rgba(253,230,137,1);
+  }
+  
+  ::selection {
+    background-color: rgba(253,230,137,1);
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}

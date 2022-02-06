@@ -1,0 +1,17 @@
+@import '../../styles/mixins/rem-calc';
+
+.token {
+  max-width: rem-calc(250);
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 5px 5px -5px rgba(247,200,120,.5);
+  cursor: pointer;
+  opacity: .7;
+  transition: box-shadow .5s ease, opacity .5s ease;
+  margin: 0 auto;
+
+  &:hover {
+    opacity: 1;
+    box-shadow: 0px 10px 30px -5px rgba(247,200,120,.5);
+  }
+}

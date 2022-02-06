@@ -1,0 +1,19 @@
+@import '../../styles/mixins/rem-calc';
+
+.panel {
+  position: absolute;
+  bottom: 50px;
+  padding: rem-calc(50);
+  border-radius: 30px;
+
+  @media screen and (max-height: 750px) {
+    padding: rem-calc(35);
+    bottom: 15px;
+  }
+}
+
+.button {
+  margin: 0 auto;
+  margin-top: rem-calc(40);
+  cursor: no-drop;
+}

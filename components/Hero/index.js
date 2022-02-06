@@ -66,7 +66,7 @@ const Hero = () => {
               <button 
                 key={id} 
                 data-slide={id}
-                className={id === 0 ? 'active' : ''}
+                className={styles.dot}
                 onClick={() => setSlideId(id)}
               >  
               </button>

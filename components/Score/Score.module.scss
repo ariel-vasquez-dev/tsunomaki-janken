@@ -1,0 +1,21 @@
+@import '../../styles/mixins/rem-calc';
+
+.score {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 25px;
+}
+
+.scoreTitle {
+  font-size: rem-calc(35);
+  line-height: rem-calc(37);
+  margin-bottom: rem-calc(10);
+  color: $white;
+}
+
+.scoreNumber {
+  font-size: rem-calc(30);
+  line-height: rem-calc(32);
+  color: $white;
+}

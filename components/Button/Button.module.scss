@@ -1,0 +1,38 @@
+@import '../../styles/vars';
+@import '../../styles/mixins/rem-calc';
+
+.button {
+  border-color: transparent;
+  outline: none;
+  padding: rem-calc(7 25);
+  font-family: $font-primary;
+  // color: map-get($font-colors, 'white');
+  color: #23272A;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: rem-calc(14);
+  line-height: rem-calc(16);
+  display: flex;
+  align-items: center;
+
+	&:active,
+	&:focus {
+		border-color: transparent;
+		outline: none;
+	}
+
+	// @each $name, $color in $button-colors{
+	// 	&.button--#{$name}{
+	// 		background-color: $color;
+			
+	// 		&:hover {
+	// 			background: lighten( $color, 10% )
+	// 		}
+	// 	}
+	// }
+}
+
+.icon {
+  font-size: 20px;
+  margin-left: rem-calc(7);
+}

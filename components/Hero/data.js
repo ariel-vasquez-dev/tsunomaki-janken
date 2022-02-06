@@ -5,7 +5,7 @@ export const data = [
     title: 'Game Now!',
     button: 'Play!',
     path: '/game',
-    image: '/img/backgrounds/watame-transparent-2.png'
+    image: '/img/backgrounds/watame-transparent-3.png'
   },
   {
     id: 1,
@@ -13,7 +13,7 @@ export const data = [
     title: 'Messages',
     button: 'Read!',
     path: '/message',
-    image: '/img/backgrounds/watame-transparent-3.png'
+    image: '/img/backgrounds/watame-transparent-2.png'
   },
 ]
 

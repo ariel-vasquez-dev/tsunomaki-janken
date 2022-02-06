@@ -1,0 +1,35 @@
+@import '../../styles/vars';
+@import '../../styles/mixins/rem-calc';
+
+.gameVideo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 101;
+}
+
+.video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  vertical-align: top;
+}
+
+.skip {
+  width: 60px;
+  height: 60px;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  font-size: rem-calc(14);
+  line-height: rem-calc(16);
+  cursor: pointer;
+}

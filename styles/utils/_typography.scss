@@ -1,0 +1,39 @@
+// Titles
+.title {
+  font-family: $font-primary;
+
+  &--l {
+    font-size: rem-calc(30);
+    letter-spacing: rem-calc(-1);
+    line-height: rem-calc(30);
+
+    @include respond-above(sm) {
+      font-size: rem-calc(90);
+      line-height: rem-calc(80);
+    }
+  }
+}
+
+
+p {
+  font-weight: map-get($font-weights, 'regular');
+  font-size: rem-calc(16);
+  line-height: rem-calc(24);
+
+  &:last-child{
+    margin-bottom: initial;
+  }
+}
+
+a,
+button {
+  outline: none;
+  cursor: pointer;
+  border: initial;
+
+  &:active,
+	&:focus {
+		border: initial;
+		outline: none;
+	}
+}

@@ -55,10 +55,11 @@ export const displacementSlider = (opts) => {
 
   let renderer = new THREE.WebGLRenderer({
     antialias: false,
+    alpha: true
   });
 
   renderer.setPixelRatio( window.devicePixelRatio );
-  renderer.setClearColor( 0x23272A, 1.0 );
+  renderer.setClearColor( 0x000000, 0  );
   renderer.setSize( renderW, renderH );
   parent.appendChild( renderer.domElement );
 
@@ -73,7 +74,8 @@ export const displacementSlider = (opts) => {
   });
 
   let scene = new THREE.Scene();
-  scene.background = new THREE.Color( 0x23272A );
+  // scene.background = new THREE.Color( 0x23272A );
+  // scene.background = new THREE.Color( 0xffffff, 0);
   let camera = new THREE.OrthographicCamera(
     renderWidth / -2,
     renderWidth / 2,
@@ -110,6 +112,8 @@ export const displacementSlider = (opts) => {
     let pagButtons = Array.from(document.getElementById('pagination').querySelectorAll('button'));
     let isAnimating = false;
 
+    pagButtons[0].setAttribute('active', true);
+
     pagButtons.forEach( (el) => {
         el.addEventListener('click', function() {
 
@@ -119,8 +123,9 @@ export const displacementSlider = (opts) => {
 
                 isAnimating = true;
 
-                document.getElementById('pagination').querySelectorAll('.active')[0].className = '';
-                this.className = 'active';
+                document.getElementById('pagination').querySelector("[active='true']").setAttribute('active', false);
+                this.setAttribute('active', true);
+                // this.classList.add('active');
 
                 let slideId = parseInt( this.dataset.slide, 10 );
 
