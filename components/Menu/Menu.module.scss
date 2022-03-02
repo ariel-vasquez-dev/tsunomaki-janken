@@ -5,6 +5,7 @@
   bottom: 0;
   width: 300px;
   background: #fff;
+  z-index: 9;
 }
 
 .nav {
@@ -13,4 +14,5 @@
   left: 0;
   bottom: 0;
   width: 300px;
+  overflow: hidden;
 }

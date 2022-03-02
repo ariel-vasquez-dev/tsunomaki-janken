@@ -1,5 +1,4 @@
 import { useContext, useEffect, useRef } from 'react';
-// import { useSpring, animated } from 'react-spring';
 import { motion, AnimatePresence, MotionConfig } from 'framer-motion';
 import { GameContext } from '../../context/GameProvider';
 import styles from './GameVideo.module.scss';

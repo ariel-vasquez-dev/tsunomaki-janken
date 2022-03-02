@@ -1,7 +1,9 @@
 @import '../../styles/mixins/rem-calc';
+@import '../../styles/mixins/breakpoints';
 
 .token {
   max-width: rem-calc(250);
+  max-height: rem-calc(250);
   width: 100%;
   border-radius: 50%;
   box-shadow: 0px 5px 5px -5px rgba(247,200,120,.5);
@@ -13,5 +15,17 @@
   &:hover {
     opacity: 1;
     box-shadow: 0px 10px 30px -5px rgba(247,200,120,.5);
+  }
+
+  &:first-child {
+    @include respond-below(xs) {
+      width: initial;
+      grid-column: 2 span;
+    }
+  }
+
+  @include respond-below(xs) {
+    max-width: 146px;
+    max-height: 146px;
   }
 }

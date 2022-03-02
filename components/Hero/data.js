@@ -12,7 +12,7 @@ export const data = [
     prehead: "Read all player's messages",
     title: 'Messages',
     button: 'Read!',
-    path: '/message',
+    path: '/messages',
     image: '/img/backgrounds/watame-transparent-2.png'
   },
 ]

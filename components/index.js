@@ -16,6 +16,11 @@ export { default as MenuToggle } from './MenuToggle';
 export { default as MenuNavigation } from './MenuNavigation';
 export { default as Score } from './Score';
 export { default as Panel } from './Panel';
+export { default as Icon } from './Icon';
+export { default as SocialMedia } from './SocialMedia';
+export { default as MessagesGrid } from './MessagesGrid';
+export { default as Message } from './Message';
+export { default as Title } from './Title';
 
 
 

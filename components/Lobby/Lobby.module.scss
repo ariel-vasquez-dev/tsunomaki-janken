@@ -1,6 +1,10 @@
+@import '../../styles/mixins/breakpoints';
+
 .lobby {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include respond-above(xs) {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

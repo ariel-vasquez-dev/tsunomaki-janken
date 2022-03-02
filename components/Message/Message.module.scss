@@ -1,0 +1,62 @@
+@import '../../styles/vars';
+@import '../../styles/mixins/rem-calc';
+
+.message {
+  border-radius: 20px;
+  text-align: center;
+  padding: rem-calc(20);
+  margin-bottom: rem-calc(20);
+  
+  &:nth-child(even) {
+    background-color: map-get($colors, 'rose');
+
+    .img {
+      border: 3px solid $white !important;
+    }
+  }
+  
+  &:nth-child(odd) {
+    background-color: map-get($colors, 'yellow');
+
+    .img {
+      border: 3px solid map-get($colors, 'brown') !important;
+    }
+
+    .copy,
+    .title,
+    .scoreItem {
+      color: map-get($colors, 'brown');
+    }
+  }
+}
+
+.img {
+  border-radius: 50%;
+  vertical-align: top;
+}
+
+.title {
+  margin-top: rem-calc(10);
+  color: $white;
+}
+
+.header {
+  margin-bottom: rem-calc(20);
+}
+
+.copy {
+  margin-bottom: rem-calc(30);
+  color: $white;
+}
+
+.scores {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.scoreItem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: $white;
+}

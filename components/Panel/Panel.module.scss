@@ -1,19 +1,23 @@
 @import '../../styles/mixins/rem-calc';
+@import '../../styles/mixins/breakpoints';
 
 .panel {
-  position: absolute;
-  bottom: 50px;
-  padding: rem-calc(50);
+  padding: rem-calc(40 0) !important;
   border-radius: 30px;
-
+  
   @media screen and (max-height: 750px) {
     padding: rem-calc(35);
     bottom: 15px;
+  }
+  
+  @include respond-above(xs) {
+    padding: rem-calc(50) !important;
+    position: absolute;
+    bottom: 50px;
   }
 }
 
 .button {
   margin: 0 auto;
   margin-top: rem-calc(40);
-  cursor: no-drop;
 }

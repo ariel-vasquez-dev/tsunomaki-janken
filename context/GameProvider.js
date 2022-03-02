@@ -3,6 +3,9 @@ import ACTIONS from '../types';
 import { gameReducer } from './gameReducer';
 
 const initState = {
+  uid: null,
+  userName: null,
+  avatar: null,
   gameInProgress: false,
   pick: '',
   housePick: '',
@@ -44,7 +47,6 @@ export const GameProvider = ({ children }) => {
 
   // Win
   const setWin = (win) => {
-    console.log('action WINasd')
     dispatch({
       type: ACTIONS.WIN,
       payload: win
@@ -53,7 +55,6 @@ export const GameProvider = ({ children }) => {
 
   // Lose
   const setLose = (lose) => {
-    console.log('action loSE')
     dispatch({
       type: ACTIONS.LOSE,
       payload: lose
@@ -62,17 +63,17 @@ export const GameProvider = ({ children }) => {
 
   // Draw
   const setDraw = (draw) => {
-    console.log('action draw')
     dispatch({
       type: ACTIONS.DRAW,
       payload: draw
     })
   }
 
-   // Draw
-   const setGameReset = () => {
+  // Login
+  const setLogin = ({ uid, userName, avatar }) => {
     dispatch({
-      type: ACTIONS.RESET,
+      type: ACTIONS.LOGIN,
+      payload: { uid, userName, avatar }
     })
   }
 
@@ -86,7 +87,7 @@ export const GameProvider = ({ children }) => {
         setWin,
         setLose,
         setDraw,
-        setGameReset,
+        setLogin
       }}
     >
       {children}

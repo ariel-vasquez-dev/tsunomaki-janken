@@ -5,7 +5,8 @@ const ACTIONS = {
   GAME_RESET: '[Game] Reset',
   WIN: '[Game] Win',
   LOSE: '[Game] Lose',
-  DRAW: '[Game] Draw'
+  DRAW: '[Game] Draw',
+  LOGIN: '[Game] Login'
   // gamePick: '[Game] Pick',
   // gameHousePick: '[Game] House Pick',
   // gameWin: '[Game] Game Win',

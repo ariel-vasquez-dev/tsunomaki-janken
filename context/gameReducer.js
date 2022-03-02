@@ -38,9 +38,12 @@ export  const gameReducer = (state, action) => {
         score: { ...state.score, draw: state.score.draw + 1 }
       }
 
-    case ACTIONS.GAME_RESET:
+    case ACTIONS.LOGIN:
       return {
         ...state,
+        uid: action.payload.uid,
+        userName: action.payload.userName,
+        avatar: action.payload.avatar,
       }
       
     default:

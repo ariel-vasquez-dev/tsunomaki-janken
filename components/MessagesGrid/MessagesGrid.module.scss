@@ -1,0 +1,22 @@
+@import '../../styles/mixins/rem-calc';
+
+.messagesGrid {
+  background-image: url('/img/backgrounds/watame-yellow.jpeg');
+  background-attachment: fixed;
+  background-position: right;
+  padding: rem-calc(100 0);
+  min-height: 100vh;
+}
+
+.masonry {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: rem-calc(-20); /* gutter size offset */
+  width: auto;
+}
+
+.masonryColumn {
+  padding-left: rem-calc(20); /* gutter size */
+  background-clip: padding-box;
+}

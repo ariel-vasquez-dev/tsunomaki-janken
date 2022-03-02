@@ -1,5 +1,4 @@
 const gameResult = (pick, housePick) => {  
-  console.log('gameresasd', pick, housePick)
   if(pick !== '' && housePick !== '') {
     if(pick !== housePick) {
       const result = () => {
@@ -34,13 +33,10 @@ const gameResult = (pick, housePick) => {
         }
       }
 
-      console.log('pepe', result())
       return result() ? 'win' : 'lose'
     } else {
       return 'draw'
     }
-  } else {
-    console.log(' EMPTY')
   }
 }
 

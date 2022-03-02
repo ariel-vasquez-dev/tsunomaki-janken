@@ -1,0 +1,20 @@
+@import '../../styles/vars';
+@import '../../styles/mixins/rem-calc';
+
+.socialMedia {
+  display: flex;
+  gap: 20px;
+}
+
+.iconContainer {
+  transition: $global-transition;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.icon {
+  color: $primary;
+  font-size: rem-calc(25);
+}

@@ -35,18 +35,20 @@ const TokensGrid = () => {
     setGameInProgress(isGameInProgress)
     setPick(pick);
     const result = gameResult(pick, houseSelectionPick)
-
-    if (result === 'win') {
-      setWin()
-    }
-
-    if (result === 'lose') {
-      setLose()
-    }
-
-    if (result === 'draw') {
-      setDraw()
-    }
+    
+    setTimeout(() => {
+      if (result === 'win') {
+        setWin()
+      }
+  
+      if (result === 'lose') {
+        setLose()
+      }
+  
+      if (result === 'draw') {
+        setDraw()
+      }
+    }, 500);
   }
 
   return (

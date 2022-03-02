@@ -1,5 +1,12 @@
+@import '../../styles/mixins/breakpoints';
+
 .tokensGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 70px;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+
+  @include respond-above(xs) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+  }
 }

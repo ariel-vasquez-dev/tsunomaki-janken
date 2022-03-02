@@ -1,6 +1,6 @@
 import styles from './Button.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import { Icon } from '..';
 
 const Button = ({ children, className = '', ...props }) => {
   return (
@@ -9,7 +9,10 @@ const Button = ({ children, className = '', ...props }) => {
       {...props}
     >
       { children }
-      <FontAwesomeIcon className={styles.icon} icon={faCaretRight} />
+      <Icon 
+        className={styles.icon} 
+        icon={faCaretRight} 
+      />
     </button>
   )
 }

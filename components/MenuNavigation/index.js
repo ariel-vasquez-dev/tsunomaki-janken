@@ -1,46 +1,29 @@
 import styles from './MenuNavigation.module.scss';
 import { motion } from "framer-motion";
-import { MenuItem } from "..";
+import { MenuItem, SocialMedia } from "..";
+import { items, variants, variants2 } from './data';
 
-const variants = {
-  open: {
-    transition: { staggerChildren: 0.07, delayChildren: 0.2 }
-  },
-  closed: {
-    transition: { staggerChildren: 0.05, staggerDirection: -1 }
-  }
+const MenuNavigation = ({ isOpen }) => {
+  return (
+    <motion.ul 
+      className={`${styles.menuNavigation} ${isOpen ? styles.active : ''}`}
+      variants={variants}
+    >
+      {items.map(props => (
+        <MenuItem 
+          key={props.id} 
+          {...props}
+        />
+      ))}
+
+      <motion.div 
+        className={styles.socialMediaContainer}
+        variants={variants2}
+      >
+        <SocialMedia />
+      </motion.div>
+    </motion.ul>
+  )
 };
-
-const itemIds = [
-  {
-    id: 0,
-    title: 'Home',
-    path: '/',
-  },
-  {
-    id: 1,
-    title: 'Game',
-    path: '/game'
-  },
-  {
-    id: 2,
-    title: 'Message',
-    path: '/message'
-  }
-];
-
-const MenuNavigation = () => (
-  <motion.ul 
-    className={styles.list}
-    variants={variants}
-  >
-    {itemIds.map(props => (
-      <MenuItem 
-        key={props.id} 
-        {...props}
-      />
-    ))}
-  </motion.ul>
-);
 
 export default MenuNavigation;
