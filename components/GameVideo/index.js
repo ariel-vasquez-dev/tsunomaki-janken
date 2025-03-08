@@ -8,7 +8,7 @@ const GameVideo = () => {
   const videoRef = useRef(null)
 
   // We toggle the video queue to exit when it's finished playing.
-	useEffect(() => {	
+	useEffect(() => {
     videoRef?.current?.addEventListener('ended', () => {
       setGameInProgress(false);
     })

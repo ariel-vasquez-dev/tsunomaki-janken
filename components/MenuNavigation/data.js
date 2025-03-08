@@ -9,11 +9,11 @@ export const items = [
     title: 'Game',
     path: '/game'
   },
-  {
-    id: 2,
-    title: 'Messages',
-    path: '/messages'
-  }
+  // {
+  //   id: 2,
+  //   title: 'Messages',
+  //   path: '/messages'
+  // }
 ];
 
 export const variants = {

@@ -78,14 +78,14 @@ const Panel = () => {
   return (
     <div className={styles.panel}>
       <Score />
-      {score.win > 0 || score.lose > 0 || score.draw > 0 ?
+      {/* {score.win > 0 || score.lose > 0 || score.draw > 0 ?
         <Button 
           className={styles.button}
           onClick={handleClick}
         >
           Share your score!
         </Button>
-      : null}
+      : null} */}
     </div>
   )
 }
