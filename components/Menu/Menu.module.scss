@@ -4,8 +4,16 @@
   left: 0;
   bottom: 0;
   width: 300px;
-  background: #fff;
   z-index: 9;
+  transition: background-color .3s ease;
+}
+
+.white-background {
+  background-color: #fff;
+}
+
+.yellow-background {
+  background-color: #FEF0CB;
 }
 
 .nav {
@@ -13,6 +21,6 @@
   top: 0;
   left: 0;
   bottom: 0;
-  width: 300px;
+  width: 150px;
   overflow: hidden;
 }

@@ -60,7 +60,8 @@ const Hero = () => {
 
         </div>
         
-        <div className={styles.pagination} id="pagination">
+        {/* TODO:: uncomment when the page /messages is ready */}
+        {/* <div className={styles.pagination} id="pagination">
           {data.map(({ id }) => {
             return (
               <button 
@@ -72,7 +73,7 @@ const Hero = () => {
               </button>
             )
           })}
-        </div>
+        </div> */}
       {/* </Container> */}
     </section>
   )

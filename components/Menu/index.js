@@ -19,7 +19,7 @@ const Menu = () => {
       ref={containerRef}
     >
       <motion.div 
-        className={styles.background} 
+        className={`${styles.background} ${isOpen ? styles["yellow-background"] : styles["white-background"]}`} 
         variants={sidebarVariants} 
       />
       <MenuNavigation

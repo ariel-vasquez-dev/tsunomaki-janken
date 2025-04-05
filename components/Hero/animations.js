@@ -194,7 +194,8 @@ export const displacementSlider = (opts) => {
 
   };
 
-  addEvents();
+  // TODO:: uncomment when the page /messages is ready
+  // addEvents();
 
   window.addEventListener( 'resize' , function(e) {
       renderer.setSize(renderW, renderH);

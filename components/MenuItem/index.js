@@ -19,18 +19,6 @@ const MenuItem = ({ path, title }) => {
           whileTap={{ scale: 0.95 }}
         >
           <div 
-            className={styles.img} 
-          >
-            <Image 
-              src={images[0]}
-              objectFit="cover"
-              alt='Icon'
-              width={40}
-              height={40}
-            />
-          </div>
-
-          <div 
             className={styles.text} 
           >
             { title }

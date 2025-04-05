@@ -9,6 +9,7 @@ export const items = [
     title: 'Game',
     path: '/game'
   },
+  // TODO:: uncomment when the page /messages is ready
   // {
   //   id: 2,
   //   title: 'Messages',

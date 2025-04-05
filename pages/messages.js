@@ -1,5 +1,4 @@
-import Link from 'next/link'
-import { Hero, HeadSeo, MessagesGrid } from '../components'
+import { HeadSeo, MessagesGrid } from '../components'
 import { Layout } from '../layouts'
 
 export default function MessagePage() {
@@ -10,8 +9,6 @@ export default function MessagePage() {
       />
 
       <Layout>
-        {/* <img src="/img/backgrounds/watame-yellow.jpeg" alt ='Watame' /> */}
-
         <MessagesGrid />
       </Layout>
     </>
